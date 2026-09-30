@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YT Manager — 유튜브 채널 관리 콘솔</title>
+<meta name="description" content="YT Manager: 운영자가 소유·관리하는 유튜브 채널의 지표를 한 화면에서 보는 비공개 셀프호스팅 콘솔">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <h1>YT Manager</h1>
+  <p class="sub">유튜브 다채널 관리 콘솔 · YouTube multi-channel analytics console</p>
+  <nav><a href="privacy.html">개인정보처리방침</a><a href="terms.html">서비스 약관</a></nav>
+</header>
+
+<p>YT Manager는 운영자들이 <strong>직접 소유하거나 관리하는 유튜브 채널</strong>의 지표를 한 화면에서 보기 위한 비공개 도구입니다. 운영자가 자기 서버에서 직접 실행하며, 일반인에게 공개된 서비스가 아닙니다. 허용 목록에 있는 계정만 로그인할 수 있습니다.</p>
+
+<div class="card">
+  <h2 style="margin-top:0">하는 일</h2>
+  <ul>
+    <li>채널별 구독자 수, 조회수·유효조회수, 시청시간, 콘텐츠 유형(롱폼·숏츠·라이브)별 추이</li>
+    <li>영상별 성과, 시청 지속률(리텐션), 트래픽 소스, 시청자 구성</li>
+    <li>댓글·좋아요·조회수를 바탕으로 한 채널 운영 인사이트와 이상 징후 알림</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">요청하는 Google 권한 (모두 읽기 전용)</h2>
+  <ul>
+    <li><code>openid</code>, <code>email</code>, <code>profile</code>: 콘솔 로그인과 허용 계정 확인</li>
+    <li><code>youtube.readonly</code>: 채널·영상 정보와 공개 댓글 읽기</li>
+    <li><code>yt-analytics.readonly</code>: 채널·영상 분석 지표 읽기</li>
+    <li><code>yt-analytics-monetary.readonly</code>: 수익 지표 읽기 (YouTube 파트너 채널만)</li>
+  </ul>
+  <p>YT Manager는 영상 업로드·수정·삭제, 댓글 작성 같은 쓰기 작업을 하지 않습니다.</p>
+</div>
+
+<p>이 서비스는 YouTube API 서비스를 사용합니다. 사용자는 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>에 동의하는 것으로 간주되며, Google의 개인정보 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
+
+<footer>YT Manager · 문의: <a href="https://github.com/boosari/ytmanager-pages/issues">GitHub 이슈</a></footer>
+</main>
+</body>
+</html>
